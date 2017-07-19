@@ -1,8 +1,9 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { colorAction, searchCriteriaChangeAction } from '../actions/productActions';
 import { InputGroup, InputGroupAddon, Input, Container,
- Row, Col, Card, CardImg, CardSubtitle,
+ Row, Col, Card, CardImg,
  ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 class Header extends Component {
@@ -44,7 +45,7 @@ class Header extends Component {
         dispatch(action);
     }
     render() {
-        const { dispatch, searchString, selectedColor, colors } = this.props;
+        const { selectedColor, colors } = this.props;
         return (
             <div>
             	<Container className='banner'>

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { searchAction } from '../actions/productActions';
 
@@ -17,14 +18,14 @@ class Products extends Component {
     }
 
     render() {
-        const { dispatch, products } = this.props,
+        const { products } = this.props,
             imgBasePath = '//prod4.mnpcdn.ae/small_light(p=listing2x,of=webp)/pub/media/catalog/product';
         return (
             <div className="flex-container">
                 {products.map((item, i) => (
                         <div key={i} className="product-list-item">
                             <figure>
-                                <img src={imgBasePath + item.image} />
+                                <img src={imgBasePath + item.image} alt=""/>
                             </figure>
                             <div>{item.name}</div>
                             <div>{item.price} AED</div>
