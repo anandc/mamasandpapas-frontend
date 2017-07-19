@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+.flex-container {
+  display:  flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.product-list-item, .product-list-item img {
+  width: 220px;
+}
+.brand-logo {
+  align-items: center;
+  border: none;
+  margin: 20px 0;
+}
+.banner {
+  margin-bottom: 20px;
+}
+.card-subtitle {
+  font-size: 9px;
+}
+
+.search-cntnr {
+  display: flex;
+}
+
+@media handheld and (max-width: 600px),
+ screen and (max-width: 600px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
